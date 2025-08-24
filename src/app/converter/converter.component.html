@@ -1,0 +1,38 @@
+<div class="wrapper">
+  <div class="container">
+    <h2>🌡️ Temperature Converter</h2>
+
+    <!-- Input value -->
+    <input type="number" [(ngModel)]="inputValue" placeholder="Enter value" />
+
+    <!-- Input unit with icons -->
+    <select [(ngModel)]="inputUnit">
+      <option value="Celsius">🔥 Celsius</option>
+      <option value="Fahrenheit">❄️ Fahrenheit</option>
+      <option value="Kelvin">🌌 Kelvin</option>
+    </select>
+
+    <span>to</span>
+
+    <!-- Output unit with icons -->
+    <select [(ngModel)]="outputUnit">
+      <option value="Celsius">🔥 Celsius</option>
+      <option value="Fahrenheit">❄️ Fahrenheit</option>
+      <option value="Kelvin">🌌 Kelvin</option>
+    </select>
+
+    <!-- Convert Button -->
+    <button (click)="convertTemperature()">Convert</button>
+
+    <!-- Result -->
+    <div *ngIf="result !== null">
+      <h3>
+        Result: {{ result | number:'1.2-2' }}
+        <span *ngIf="outputUnit === 'Celsius'">🔥</span>
+        <span *ngIf="outputUnit === 'Fahrenheit'">❄️</span>
+        <span *ngIf="outputUnit === 'Kelvin'">🌌</span>
+        {{ outputUnit }}
+      </h3>
+    </div>
+  </div>
+</div>
