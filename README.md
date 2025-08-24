@@ -1,59 +1,81 @@
-# TemperatureConverter
+🌡️ Temperature Converter (Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.0.
+A colorful and interactive temperature converter built with Angular (standalone components).
+It allows you to convert between Celsius (🔥), Fahrenheit (❄️), and Kelvin (🌌) in a modern UI.
 
-## Development server
+🚀 Features
 
-To start a local development server, run:
+✅ Convert between Celsius, Fahrenheit, Kelvin
 
-```bash
+✅ Clean, modern UI with animations
+
+✅ Responsive and centered design
+
+✅ Emoji icons 🌡️🔥❄️🌌 for better visualization
+
+✅ Built with Angular 17+ standalone API (no app.module.ts)
+
+📂 Project Structure
+src/
+ └── app/
+      ├── app.ts
+      ├── app.html
+      └── converter/
+           ├── converter.component.ts
+           ├── converter.component.html
+           └── converter.component.css
+ └── main.ts
+
+⚡ Installation & Setup
+
+Clone or download this repo:
+
+git clone https://github.com/shubham-XD96/temperature-converter.git
+cd temperature-converter
+
+
+Install dependencies:
+
+npm install
+
+
+Run the development server:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+Open in browser:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+http://localhost:4200
 
-```bash
-ng generate component component-name
-```
+🛠️ Usage
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Enter a temperature value.
 
-```bash
-ng generate --help
-```
+Select input unit (Celsius, Fahrenheit, Kelvin).
 
-## Building
+Select output unit.
 
-To build the project run:
+Click Convert → see result with emoji icon.
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+💡 Example
 
-## Running unit tests
+Input: 100 °C → Output: 212 °F ❄️
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Input: 0 °C → Output: 273.15 K 🌌
 
-```bash
-ng test
-```
+Input: 32 °F → Output: 0 °C 🔥
 
-## Running end-to-end tests
+🔧 Built With
 
-For end-to-end (e2e) testing, run:
+Angular 17+
 
-```bash
-ng e2e
-```
+TypeScript
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+HTML5 / CSS3
 
-## Additional Resources
+👨‍💻 Author
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Shubham Prakash ✨
+Feel free to fork, improve, and share! 🚀
